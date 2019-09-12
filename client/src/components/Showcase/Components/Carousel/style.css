@@ -1,0 +1,24 @@
+.carousel-btns {
+    background-color: #fff;
+    border-radius: 50%;
+    border-width: 0;
+    box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
+    color: rgb(245, 119, 6);
+    font-size: 20px;
+    height: 40px;
+    line-height: 1;
+    padding: 8px 0;
+    text-align: center;
+    top: 50%;
+    transition: 300ms;
+    width: 40px;
+    z-index: 3;
+    position: absolute;
+}
+
+#showcase-container #backward {
+    left: 0.75rem;
+}
+#showcase-container #forward {
+    right: 0.75rem;
+}

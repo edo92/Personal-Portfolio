@@ -1,0 +1,22 @@
+#resume-sidebar  {
+    background: linear-gradient(90deg,rgb(24, 24, 24) 100%, rgba(0,0,0,1) 100%);
+    height: 100vh;
+    border-top-right-radius: 7px;
+    padding: 1rem;
+}
+
+#sidebar-icons i {
+    color: #fff;
+    font-size: 30px;
+    padding: .75rem;
+}
+
+#sidebar-intro h4, p {
+    color: #fff;
+}
+#sidebar-intro h4 {
+    font-weight: 600;
+}
+#sidebar-intro p {
+    margin: 0;
+}

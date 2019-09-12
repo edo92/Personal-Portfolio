@@ -1,0 +1,32 @@
+#footer-container {
+    background-color: #2A3039;
+    border-bottom: 3px solid #f57706;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+
+/* ------ footer Bottom ------ */
+#footer-bottom div {
+    width: 100%;
+    display: inline-block;
+}
+#footer-bottom {
+    background-color: rgba(0,0,0,.2);
+    bottom: 0;
+    margin: 0;
+    padding: 1.3rem;
+}
+
+
+/* --- Footer body --- */
+#footer-body {
+    padding: 2rem;
+    margin: 0;
+}
+
+#footer-body > div {
+    margin: 0;
+    padding: 1.5rem;
+}

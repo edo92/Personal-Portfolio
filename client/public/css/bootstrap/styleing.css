@@ -1,0 +1,44 @@
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: #fff;
+}
+
+/* -----> Fonts <----*/
+.font-700 {
+    font-weight: 700;
+}
+
+
+/* -----> xxx <----*/
+.list-none {
+    list-style: none;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.overflow-x-hidden {
+    overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+    overflow-y: hidden;
+}
+.position-absolute {
+    position: absolute;
+}
+.br-3 {
+    border-radius: 1rem;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.display-flex {
+    display: flex;
+}

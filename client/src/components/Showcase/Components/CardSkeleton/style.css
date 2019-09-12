@@ -1,0 +1,60 @@
+.ant-skeleton-content .ant-skeleton-title {
+    margin-top: 0 !important;
+    width: 100% !important;
+    height: 200px !important;
+    border-radius: 3px;
+}
+
+.skeleton-body .ant-skeleton-content 
+.ant-skeleton-title + 
+.ant-skeleton-paragraph {
+    display: none;
+}
+
+.skeleton-body .ant-skeleton {
+    border: 2px solid #f2f2f2;
+    border-radius: 5px;
+}
+.skeleton-body .ant-skeleton-content {
+    padding: .2rem;
+    margin: 0 !important;
+}
+.skeleton-body .ant-skeleton-title {
+    margin: 0;
+}
+
+
+/* --- Skeleton Bottom Content --- */
+.skeleton-bottom .ant-skeleton-content 
+.ant-skeleton-title + 
+.ant-skeleton-paragraph {
+    margin: 0 !important;
+}
+
+.skeleton-bottom .ant-skeleton-content 
+.ant-skeleton-title + 
+.ant-skeleton-paragraph :nth-child(1){
+    height: 10px !important;
+    margin: 10px;
+    width: 85% !important;
+}
+
+.skeleton-bottom .ant-skeleton-content 
+.ant-skeleton-title + 
+.ant-skeleton-paragraph :nth-child(2) {
+    height: 10px !important;
+    margin: 10px !important;
+    width: 65% !important;
+}
+
+.skeleton-bottom .ant-skeleton-content 
+.ant-skeleton-title + 
+.ant-skeleton-paragraph :nth-child(3) {
+    height: 10px !important;
+    margin: 10px !important;
+    width: 80% !important;
+}
+
+.skeleton-bottom .ant-skeleton-content .ant-skeleton-title {
+    display: none;
+}

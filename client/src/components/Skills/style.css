@@ -1,0 +1,13 @@
+.bg-dot-grid {
+    background-image:
+    radial-gradient(#2a3039 .04rem, transparent 0);
+    background-size: 1rem 1rem;
+    background-position: 50%;
+    background-color: #f57706;
+}
+
+#skills-container {
+    position: relative;
+    top: 5rem;
+    padding-bottom: 10rem;
+}

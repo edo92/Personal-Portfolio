@@ -1,0 +1,20 @@
+@import './sidebar.css';
+@import './resume.css';
+@import './responsive.css';
+
+#resume-container {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.justify-flex {
+    justify-content: center;
+    display: inline-flex;
+}
+
+.social-media-container {
+    display: flex;
+    padding-top: 0;
+    justify-content: center;
+}
