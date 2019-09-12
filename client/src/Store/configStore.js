@@ -1,12 +1,12 @@
-import { createStore, combineReducers, applyMiddleware } from 'redux';
-import thunk from 'redux-thunk';
+import { createStore, combineReducers, applyMiddleware } from 'redux'
+import thunk from 'redux-thunk'
 
-import dataCenter from './Reducers/dataCenter';
-import lineUp from './Reducers/lineUp';
+import admin from './Reducers/admin'
+import app from './Reducers/app'
 
 const rootReducer = combineReducers({
-    dataCenter,
-    lineUp
+    admin,
+    app
 });
 
 // Creating store and apply thunk redux middleware

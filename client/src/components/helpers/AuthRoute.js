@@ -16,7 +16,7 @@ export const AuthRoute = ({ component: RouteComponent, ...rest }) => {
                         currentUser && isAuth && (
                         <Redirect to={{
                             pathname:'/admin',
-                            state: { from: '/signin' }
+                            state: { from: '/admin-signin' }
                         }}/>
                     )
                 )

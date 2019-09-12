@@ -7,15 +7,19 @@
   const appUse = require( './server/appUse' );
 
   const server = require( 'http' ).createServer( app );
+  const firebaseApp = require('./server/fb_initialize_app');
+  const admin = require('firebase-admin');
 
   const PORT = process.env.PORT || 3001;
   if ( process.env.NODE_ENV === 'production' ) {
     app.use( express.static( 'client/build' ) );
   };
 
-  appUse( app ); // app.user(  )
+  appUse( app ); 
 
-  mongooseConnection(  ); // Mongoose
+  firebaseApp( admin ); //firebase initialzie
+
+  mongooseConnection(); // Mongoose
 
   require('./routes' )( app, db ); //Route files
 

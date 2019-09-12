@@ -1,0 +1,19 @@
+
+#signin-form-inner {
+    border:1px solid #30588e;
+    border-radius: 5px;
+    padding: 5rem;
+}
+
+#signin-form-container {
+    justify-content: center;
+    display: flex;
+    padding-top: 10rem;
+}
+
+#signin-btn {
+    width: 100%;
+    border-radius: 15px;
+    background: -webkit-linear-gradient(top, #446ca2, #184076);
+    color: #fff;
+}

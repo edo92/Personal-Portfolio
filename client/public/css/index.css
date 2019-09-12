@@ -3,6 +3,6 @@
 @import './bootstrap/setup.css';
 @import './bootstrap/spacing.css';
 @import './bootstrap/styleing.css';
-@import './bootstrap//responsiv.css';
 @import './bootstrap//body.css';
 @import './bootstrap/fonts.css';
+@import './bootstrap//responsiv.css';

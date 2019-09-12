@@ -1,0 +1,16 @@
+#login-form .ant-input {
+    border-radius: 15px !important;
+    width: 400px;
+    border-color: #30588e;
+}
+
+#login-form .ant-form-item i {
+    color: #30588e;
+}
+
+#login-form {
+    border-radius: 4px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}

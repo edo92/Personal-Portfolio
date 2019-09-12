@@ -1,5 +1,5 @@
 const authRoute = require('./authRoute');
 
-module.exports = ( app ) => {
-    require('./api-requests/user-api')( app, authRoute )
+module.exports = ( app, db ) => {
+    require('./api-requests/user-api')( app, db, authRoute )
 };

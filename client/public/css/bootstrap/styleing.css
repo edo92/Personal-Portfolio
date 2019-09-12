@@ -17,20 +17,23 @@
     list-style: none;
 }
 
-.overflow-hidden {
+.ov-hidden {
     overflow: hidden;
 }
-
 .overflow-x-hidden {
     overflow-x: hidden;
 }
-
 .overflow-y-hidden {
     overflow-y: hidden;
 }
+
 .position-absolute {
     position: absolute;
 }
+.pos-fixed {
+    position: fixed;
+}
+
 .br-3 {
     border-radius: 1rem;
 }
@@ -41,4 +44,8 @@
 
 .display-flex {
     display: flex;
+}
+
+.b-0 {
+    bottom: 0;
 }

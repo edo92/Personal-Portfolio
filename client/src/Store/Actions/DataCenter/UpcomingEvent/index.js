@@ -1,1 +1,0 @@
-export { getUpcomingEvent } from './GetUpcomingEvent/UpcomingEvent';

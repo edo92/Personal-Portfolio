@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 module.exports = () => {
-    const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/counter';
+    const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/portfolio';
 
     mongoose.set('useCreateIndex', true);
     mongoose.set( 'useFindAndModify', true );
