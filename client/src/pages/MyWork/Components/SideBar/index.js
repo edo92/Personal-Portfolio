@@ -2,15 +2,18 @@ import React from 'react'
 import { Icon } from 'antd'
 
 import SideBar from '../../../../components/SideBar'
+import bgImg from '../../../../static/images/banner.jpg'
 
 const navItems = [
     {
         name: 'Front End',
-        icon: 'appstore'
+        icon: 'appstore',
+        target: 'frontend'
     },
     {
         name: 'Back End',
-        icon: 'code'
+        icon: 'code',
+        target: 'backend'
     },
     {
         name: 'UI - UX',
@@ -19,13 +22,15 @@ const navItems = [
     
 ];
 
-const MyWorkSidebar = () => {
+const MyWorkSidebar = props => {
     return (
-        <SideBar>
+        <SideBar
+            backgroundImg={ bgImg }
+        >
             <ul id='sidebar-nav' className='col-12 px-0'>
                 { navItems.map(( item, i ) => {
                     return (
-                        <li key={ item.name+i } className='scene'>
+                        <li key={ item.name+i } onClick={()=> props.selectOption( item.target ) } className='scene'>
                             <div className='box'>
                                 <div className='right face'>
                                     <Icon type={ item.icon }/>

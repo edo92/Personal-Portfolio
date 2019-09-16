@@ -23,7 +23,7 @@ const Header = () => {
                         </ul>
                         <div className='col-4'>
                             <div id='resume-bttn'>
-                                <a href='/resume' className='header-text'>Resume</a>
+                                <a href='/resume' className='header-text btn-imp'>Resume</a>
                             </div>
                         </div>
                     </div>

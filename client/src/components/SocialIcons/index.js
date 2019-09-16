@@ -4,16 +4,15 @@ import { Icon } from 'antd'
 const SocialIcons = () => {
     return (
         <span>
-            <a href='facebook.com'>
-                <Icon type='facebook'/>
+            <a href='https://github.com/edo92'>
+                <Icon type='github'/>
+            </a>
+            <a href='https://www.linkedin.com/in/the-ej'>
+                <Icon type='linkedin'/>
             </a>
 
-            <a href='instagram.com'>
+            <a href='https://www.instagram.com/the_ej22/'>
                 <Icon type='instagram'/>
-            </a>
-        
-            <a href='github.com'>
-                <Icon type='github'/>
             </a>
         </span>
     )

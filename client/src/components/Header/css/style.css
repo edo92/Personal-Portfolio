@@ -54,17 +54,22 @@
 }
 
 /* --- Resume Nav Bttn --- */
+#resume-bttn:hover {
+    transition: ease-in 80ms;
+    color: #ff2f32 !important;
+}
+
 #resume-bttn {
     padding: 1rem;
     text-align: center;
-    border: 1px solid #e8e8e8;
+    border: 1px solid #ff2f32;
     border-radius: 17px;
     cursor: pointer;
 }
-#resume-bttn:hover {
-    transition: ease-in 80ms;
-}
 
+.btn-imp {
+    color: #ff2f32 !important;
+}
 
 /* --- class styles --- */
 .header-text {

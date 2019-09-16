@@ -20,10 +20,10 @@ const BreadcrumbRoute = props => {
     };
 
     return (
-        <Breadcrumb>
-            <Breadcrumb.Item>
+        <Breadcrumb style={ props.style }>
+            { props.intpage ? <Breadcrumb.Item>
                 <a onClick={()=> redirect('')}><Icon type='home'/></a>
-            </Breadcrumb.Item>
+            </Breadcrumb.Item> : null }
 
             { rotueArr.map(( route, i ) => {
                 return(
@@ -34,7 +34,6 @@ const BreadcrumbRoute = props => {
                     </Breadcrumb.Item>
                 )
             })}
-
         </Breadcrumb>
     )
 };

@@ -1,7 +1,7 @@
 #mywork-sidebar-container {
-    background: linear-gradient(-1deg, #022954 6%, #2f4596 97%);
     height: 100vh;
     padding: 0;
+    background-size: cover;
 }
 
 
@@ -29,8 +29,6 @@
 
 #sidebar-header {
     height: 50px;
-    background: #324794;
-    border-bottom: .5px solid #203fa2e0;
     -webkit-box-shadow: 0 3px 6px 0 rgba(0,0,0,.07);
     box-shadow: 0 3px 6px 0 rgba(0,0,0,.07);
 }

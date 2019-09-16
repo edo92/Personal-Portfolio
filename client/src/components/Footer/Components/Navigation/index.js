@@ -3,50 +3,35 @@ import './navigation.css'
 
 const Navigation = () => (
     <ul id='footer-naviation' className='row col-12'>
-        <li className='col-4'>
+        <li className='col-5'>
             <nav>
                 <h2>About</h2>
                 <ul className='p-0 m-0 pt-2'>
                     <li>
-                        <a>Story</a>
+                        <a href='/resume'>Resume</a>
                     </li>
                     <li>
-                        <a>Experiance</a>
+                        <a href='/mywork'>Projects</a>
                     </li>
                     <li>
-                        <a>Resume</a>
+                        <a href='/'>Portfolio</a>
                     </li>
                 </ul>
             </nav>
         </li>
-        <li className='col-4'>
-            <nav>
-                <h2>Projects</h2>
-                <ul className='p-0 m-0 pt-2'>
-                    <li>
-                        <a>Full Stack</a>
-                    </li>
-                    <li>
-                        <a>Front End</a>
-                    </li>
-                    <li>
-                        <a>Back End</a>
-                    </li>
-                </ul>
-            </nav>
-        </li>
-        <li className='col-4'>
+    
+        <li className='col-5'>
             <nav>
                 <h2>Contact</h2>
                 <ul className='p-0 m-0 pt-2'>
                     <li>
-                        <a>Email</a>
+                        <a>Email: edoter92@gmail.com</a>
                     </li>
                     <li>
-                        <a>Contact Info</a>
+                        <a>Phone: (818) 404-3185</a>
                     </li>
                     <li>
-                        <a>Linked In</a>
+                        <a>LinedIn: linkedin.com/ed-ej</a>
                     </li>
                 </ul>
             </nav>
