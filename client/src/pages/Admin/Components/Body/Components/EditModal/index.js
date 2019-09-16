@@ -12,7 +12,7 @@ class EditModal extends Component {
                 <Modal title='Edit Project'
                     visible={ props.editModal }
                     onCancel={ props.editModalSwtich }
-                    onOk={ props.handleSubmitProject }
+                    onOk={ props.editModalSwtich }
                 >
                     <div className='w-100'>
                         <div className='col-12'>

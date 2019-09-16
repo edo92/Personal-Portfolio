@@ -1,7 +1,7 @@
 {
-  "name": "mern-server",
-  "version": "8.9.2",
-  "description": "Mern Demo",
+  "name": "portfolio",
+  "version": "1.0",
+  "description": "Personal Protfolio",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -11,12 +11,19 @@
     "setup": "npm install && cd client && npm install",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
+
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
+  
   "devDependencies": {
     "concurrently": "^3.5.0",
     "nodemon": "^1.19.2"
   },
+
+  "engines": {
+    "node": "10"
+  },
+
   "dependencies": {
     "axios": "^0.18.1",
     "body-parser": "^1.18.3",
