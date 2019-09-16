@@ -1,8 +1,9 @@
 import React from 'react'
-import { Form, Input, Icon } from 'antd'
+import { Form, Input, Icon, Radio } from 'antd'
 
 const ProjectForm = props => {
     let { TextArea } = Input;
+    console.log('xxxx', props.form )
     return(
         <div className='col-12 p-0'>
             <Form>
@@ -63,6 +64,26 @@ const ProjectForm = props => {
                         />
                     </div>
                 </Form.Item> 
+                <Form.Item>
+                    <Input 
+                        onChange={ props.handleInput } 
+                        value={ props.form.routes }
+                        prefix={ <Icon type='compass'/> }
+                        className='mx-1' 
+                        name='routes'
+                        placeholder='Routes'
+                    />
+                </Form.Item>
+                <Form.Item>
+                    <Radio.Group 
+                        value={ props.form.type }
+                        onChange={ props.projectType } 
+                    >
+                        <Radio value={'fullstack'}>Full Stack</Radio>
+                        <Radio value={'backend'}>Back End</Radio>
+                        <Radio value={'frontend'}>Front End</Radio>
+                    </Radio.Group>         
+                </Form.Item>
             </Form>
         </div>
     )

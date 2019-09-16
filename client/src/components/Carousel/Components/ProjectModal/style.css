@@ -5,3 +5,11 @@
 .ant-carousel li button {
     background: gray !important;
 }
+
+#project-main-img {
+    border-radius: 5px;
+}
+
+.view-text {
+    color: dimgrey
+}

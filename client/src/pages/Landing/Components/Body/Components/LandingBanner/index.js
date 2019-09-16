@@ -14,7 +14,10 @@ const LandingBanner = () => {
             <div id='banner-text-container'>
                 <ul className='col-12 p-0'>
                     <li>
-                        <h1 className='main-text'>Welcome To My Portfolio</h1>
+                        <p className='main-text'>Hello, I'm
+                            <span className='color-fea657'> Eduard Jacobs </span><br/>
+                            <span>I'm a full-stack web developer</span>
+                        </p>
                     </li>
                     <li className='p-5'>
                         <a className='banner-bttn'> 

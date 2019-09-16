@@ -1,28 +1,28 @@
-import React from 'react'
-import ShowcaseCarousel from '../../../../components/Showcase'
+import React, { memo } from 'react'
+import ShowcaseCarousel from '../../../../components/Carousel'
 import LandingIntro from './Components/LandingIntro'
 import LandingBanner from './Components/LandingBanner'
 
 const Home = props => {
+    let projs = props.projects;
     return (
         <div className='col-12 p-0'>
             <LandingBanner/>
 
             <LandingIntro/>
             
-            <ShowcaseCarousel 
+            { projs.fullstack ? <ShowcaseCarousel 
                 title='Full Stack'
-                list={ props.projects.fullstack }
-            />
+                list={ projs.fullstack }
+            /> : null }
 
-            <ShowcaseCarousel 
+            { projs.frontend ? <ShowcaseCarousel 
                 title='Front End'
-                list={ props.projects.frontend }
-            />
-
+                list={ projs.frontend }
+            /> : null }
 
         </div>
     )
 };
 
-export default Home;
+export default memo( Home );

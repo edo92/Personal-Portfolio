@@ -96,4 +96,4 @@ class Carousel extends Component {
 /* ======= **** RESIZE BUG **** ========== */
 /* ======= **** SKELETON BUG **** ========== */
 
-export default memo( Carousel );
+export default Carousel;

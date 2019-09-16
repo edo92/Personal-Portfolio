@@ -12,7 +12,8 @@ import { getAllProjects } from '../../Store/Actions/getAllProjects'
 
 class AdminPage extends Component {
     state={
-        addModal: false
+        addModal: false,
+        editModal: false
     }
 
     componentDidMount(){
@@ -22,6 +23,12 @@ class AdminPage extends Component {
     addProjectModal = () => {
         this.setState({
             addModal: !this.state.addModal
+        })
+    };
+    editProjectModal = (data) => {
+        this.setState({
+            editModal: !this.state.editModal,
+            editInfo: data
         })
     };
 
@@ -42,6 +49,11 @@ class AdminPage extends Component {
                     <Body 
                         addModal={ this.state.addModal }
                         addModalSwtich={ this.addProjectModal }
+
+                        editModal={ this.state.editModal }
+                        editModalSwitch={ this.editProjectModal }
+
+                        editData={ this.state.editInfo }
                         projects={ this.props.projects }
                     />
                 </div>

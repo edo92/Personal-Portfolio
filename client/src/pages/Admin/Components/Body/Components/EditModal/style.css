@@ -1,0 +1,17 @@
+.edit-form-images {
+    height: 100px;
+    background-size: cover !important; 
+    background-repeat: no-repeat !important;
+    border-radius: 3px;
+}
+
+.image-box {
+    border: 1px solid #d8d8d8;
+    border-radius: 3px;
+    padding: .35rem;
+}
+
+.image-list {
+    padding: 0;
+    padding-right: .75rem;
+}

@@ -33,7 +33,7 @@ const ProjectCard = props => {
                                 <Button>delete</Button>
                             </Popconfirm>
 
-                            <Button onClick={()=> props.modalSwitch( props.item ) }>edit</Button>
+                            <Button onClick={()=> props.editModalSwitch( props.item ) }>edit</Button>
                         </div>
                     </div>
                 </li>

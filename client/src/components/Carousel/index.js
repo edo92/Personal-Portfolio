@@ -44,7 +44,7 @@ class ShowcaseCarousel extends React.Component {
                             :
                             <Carousel 
                                 modalSwitch={ this.modalSwitch } 
-                                list={ props.list }
+                                list={ this.props.list }
                             />
                         }
                     </div>

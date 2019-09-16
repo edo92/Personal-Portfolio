@@ -15,20 +15,24 @@ var ProjectSchema = new Schema({
             type: String,
         },
 
+        routes: {
+            type: String,
+        },
+
         website: {
-            type: String
+            type: String,
         },
 
         github: {
-            type: String
+            type: String,
         },
         
         type: {
-            type: String
+            type: String,
         },
         
         image: {
-            type: String
+            type: Array,
         }
 });
 

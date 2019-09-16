@@ -5,20 +5,23 @@ import { getAllProjects } from '../../Actions/getAllProjects'
 
 export const addProject = form => {
     return async dispatch => {
-        let image = form.image;
-
         try {
-            let storageRef = firebase.storage().ref(`image/${image.name}`);
-            storageRef.put( image.originFileObj ).then(snapshot => {
-                //
-            });
+            let urls=[];
+            form.image.images.forEach( async (image, i) => {
+                let storageRef = firebase.storage().ref(`image/${image.name}`);
 
-            storageRef.getDownloadURL().then(url => {
-                form.image = url;
-                axios.post('/add/project/', { form });
-                dispatch( getAllProjects())
+                await storageRef.put( image.originFileObj );
+
+                await storageRef.getDownloadURL().then(url => {
+                    urls.push( url );
+                });
+
+                if( form.image.images.length-1 === i ){
+                    form.image = urls;
+                    await axios.post('/add/project/', { form });
+                    dispatch( getAllProjects());
+                }
             });
-            
             return { success: true };
         } 
         catch ( error ){ throw error };

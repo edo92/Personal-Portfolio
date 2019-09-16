@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Gayathri|Muli|Roboto&display=swap');
+
 #home-banner {
     padding: 0;
 }
@@ -10,16 +12,12 @@
     text-align: center;
 }
 
-.main-text {
-    font-size: 48px;
-    color: #e8e8e8;
-}
-
 #banner-img {
     width: 100%;
 }
 
 .banner-bttn {
+    font-family: 'Muli', sans-serif;
     border: 1px solid #fff;
     border-radius: 15px;
     color: #fff !important;
@@ -33,6 +31,16 @@
     transition: 0.5s;
     border: 1px solid #fea657;
     color: #fea657 !important;
+}
+
+.main-text {
+    font-size: 36px;
+    color: #e8e8e8;
+    font-family: 'Muli', sans-serif;
+}
+.color-fea657 {
+    color: #fea657;
+    text-shadow: 1px 1px 1px #ff00008c;
 }
 
 

@@ -3,6 +3,7 @@ const control = require('../controller');
 module.exports = ( app, db, protect ) => {
     app.post('/add/project/', async (req, res) => {
         let form = req.body.form;
+        console.log('form', form )
         try {
             control.addProject( db, form );
 

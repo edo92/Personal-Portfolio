@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { Upload, Button, Icon, Modal, Radio } from 'antd'
+import { Upload, Button, Icon, Modal } from 'antd'
 
 import ProjectForm from '../ProjectForm/index'
 
@@ -13,10 +13,11 @@ class AddProjectModal extends Component {
             name:'',
             desciption:'',
             summary:'',
+            routes:'',
             github:'',
             website:'',
             type:'',
-            image: {}
+            image: { images:[]}
         },
     }
 
@@ -32,16 +33,36 @@ class AddProjectModal extends Component {
 
     handleUpload = e => {
         let image = e.fileList;
-        if( image ){
-            this.setState({
-                ...this.state,
-                form: {
-                    ...this.state.form,
-                    image: image[0]
+        this.setState({
+            ...this.state,
+            form: {
+                ...this.state.form,
+                image:{
+                    ...this.state.form.image,
+                    images: image
                 }
-            });
-        }
+            }
+        });
     }
+
+    onRemove = e => {
+        let list = this.state.form.image.images.filter( img => {
+            if( img.uid !== e.uid ){
+                return this.state.form.image.images
+            }
+        });
+        this.setState({
+            ...this.state,
+            form: {
+                ...this.state.form,
+                image: {
+                    ...this.state.form.image,
+                    images: list
+                }
+            }
+        })
+    }
+
     handleProjectType = e => {
         this.setState({
             ...this.state,
@@ -66,6 +87,7 @@ class AddProjectModal extends Component {
         }
     }
 
+
     render(){
         return (
             <Modal
@@ -79,24 +101,14 @@ class AddProjectModal extends Component {
                         <ProjectForm
                             handleInput={ this.formHandleInput }
                             form={ this.state.form }
+                            projectType={ this.handleProjectType }
                         />
                     </div>
-
-                    <div className='col-12 px-0 py-3'>
-                        <Radio.Group 
-                            value={ this.state.form.type }
-                            onChange={ this.handleProjectType } 
-                        >
-                            <Radio value={'fullstack'}>Full Stack</Radio>
-                            <Radio value={'backend'}>Back End</Radio>
-                            <Radio value={'frontend'}>Front End</Radio>
-                        </Radio.Group>
-                    </div>
-
                     <div className='col-12 px-0 py-3'>
                         <Upload 
                             onChange={ this.handleUpload }
                             customRequest={ this.customRequest }
+                            onRemove={ this.onRemove }
                         >
                             <div className='col-12 px-0 py-3'>
                                 <Button><Icon type='upload' /> Upload</Button>
