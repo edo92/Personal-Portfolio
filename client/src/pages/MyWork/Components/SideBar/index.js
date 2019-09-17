@@ -6,20 +6,20 @@ import bgImg from '../../../../static/images/banner.jpg'
 
 const navItems = [
     {
-        name: 'Front End',
+        name: 'Full Stack',
         icon: 'appstore',
+        target: 'fullstack'
+    },
+    {
+        name: 'Front End',
+        icon: 'ant-design',
         target: 'frontend'
     },
     {
         name: 'Back End',
         icon: 'code',
         target: 'backend'
-    },
-    {
-        name: 'UI - UX',
-        icon: 'ant-design'
-    },
-    
+    }
 ];
 
 const MyWorkSidebar = props => {

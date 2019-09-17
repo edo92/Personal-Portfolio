@@ -8,11 +8,11 @@
 
 #cardImg-container img {
     width: 100%;
+    border-radius: 8px;
     min-height: 175px;
     object-fit: cover;
     padding: .5rem;
 }
-
 
 /* --- Project card children --- */
 #project-describe {

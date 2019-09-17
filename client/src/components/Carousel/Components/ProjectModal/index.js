@@ -1,26 +1,9 @@
 import React from 'react'
-import { Modal, Icon, Carousel } from 'antd'
+import { Modal, Icon } from 'antd'
 import './style.css'
 
-import BreadCrumb from '../../../../components/Breadcrumb'
-
-const ImageCarousel = props => {
-    return (
-        <Carousel autoplay>
-            <div>
-                <img id='project-main-img' className='img-fluid' alt='project-main-img' src={ props.image }/>
-            </div>
-            { props.imageList && props.imageList.map( img => {
-                return (
-                    <div>
-                        <img className='img-fluid' alt='project-images' src={ img }/>
-                    </div>
-                )
-            })}
-        </Carousel>
-    )
-};
-
+import BreadCrumb from '../../../Breadcrumb'
+import ImageCarousel from '../../../ImageCarousel'
 const ProjectModal = props => {
     let { project } = props;
     return (
@@ -34,7 +17,7 @@ const ProjectModal = props => {
                     <div className='w-100'>
                         <div className='col-12 p-2'>
                             <div className='col-12 p-0'>
-                                <ImageCarousel image={ project.image } imageList={ project.images }/>
+                                <ImageCarousel imageList={ project.image }/>
                             </div>
                         </div>
                         <div className='col-12 p-3 pt-4'>
