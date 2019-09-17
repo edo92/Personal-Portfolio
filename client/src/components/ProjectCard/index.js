@@ -8,7 +8,7 @@ const ProjectCard = props => {
             <ul id='project-card'>
                 <li>
                     <div id='cardImg-container'>
-                        <img src={ props.item.image } className='img-fluid' alt='project-card'/>
+                        <img src={ props.item.image[0] } className='img-fluid' alt='project-card'/>
                     </div>
                 </li>
                 <li>
