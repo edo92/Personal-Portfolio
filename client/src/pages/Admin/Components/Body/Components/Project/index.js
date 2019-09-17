@@ -11,13 +11,13 @@ const ProjectCard = props => {
             <ul id='project-card'>
                 <li>
                     <div id='cardImg-container'>
-                        <img src={ props.item.image } className='img-fluid' alt='project-card'/>
+                        <img src={ props.item.image[0] } className='img-fluid' alt='project-card'/>
                     </div>
                 </li>
                 <li>
                     <div id='project-describe'>
-                        <span>Los Angeles Highrises</span><br/>
-                        <small>By: Gary Jacobs</small><br/>
+                        <span>{ props.item.name }</span><br/>
+                        <small>{ props.item.summary }</small><br/>
                     </div>
                 </li>
                 <li>

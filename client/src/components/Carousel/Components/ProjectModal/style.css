@@ -17,3 +17,7 @@
 .ant-breadcrumb > span {
     color: red
 }
+
+#modalView-container {
+    padding-top: .75rem;
+}

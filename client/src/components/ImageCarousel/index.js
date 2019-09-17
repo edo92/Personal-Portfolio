@@ -29,11 +29,11 @@ class ImageCarousel extends Component {
 
     render(){
         return (
-            <div className='col-12'>
+            <div id='image-carousel' className='col-12'>
                 <div>
                     <button 
                         onClick={ this.slideleft }
-                        id='backward' style={{marginLeft:'-4rem'}} className='carousel-btns'
+                        className='carousel-btns'
                     >
                         <Icon type='left' />
                     </button> 
@@ -44,7 +44,7 @@ class ImageCarousel extends Component {
                 <div>
                     <button 
                         onClick={ this.slideright }
-                        id='forward' className='carousel-btns'
+                        className='carousel-btns'
                     >
                         <Icon type='right' />
                     </button>
