@@ -5,6 +5,7 @@ const initialState = {
 const app = ( state = initialState, action ) => {
     switch( action.type ){
         case 'ALL_PROJECTS':
+            console.log('action', action )
             return {
                 ...state,
                 projects: action.projects

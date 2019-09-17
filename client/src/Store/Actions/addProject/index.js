@@ -1,7 +1,9 @@
 import axios from 'axios'
 import firebase from 'firebase/app'
 import 'firebase/storage'
+
 import { getAllProjects } from '../../Actions/getAllProjects'
+import { request } from '../../../requests'
 
 export const addProject = form => {
     return async dispatch => {
@@ -18,8 +20,12 @@ export const addProject = form => {
 
                 if( form.image.images.length-1 === i ){
                     form.image = urls;
-                    await axios.post('/add/project/', { form });
-                    dispatch( getAllProjects());
+                    let data = await request.project.add( form );
+
+                    let projects = data.success;
+                    if( projects ){
+                        dispatch({ type: 'ALL_PROJECTS', projects });
+                    }
                 }
             });
             return { success: true };

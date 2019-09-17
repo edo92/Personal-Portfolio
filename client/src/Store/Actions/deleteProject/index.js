@@ -1,10 +1,13 @@
-import axios from 'axios'
-import { getAllProjects } from '../getAllProjects'
+import { request } from '../../../requests'
 
 export const deleteProject = id => {
     return async dispatch => {
-        axios.get(`/delete/project/${id}`);
-        dispatch( getAllProjects());
+        let data = await request.project.delete( id );
+
+        let projects = data.success;
+        if( projects ){
+            dispatch({ type: 'ALL_PROJECTS', projects });
+        }
     }
 };
 
