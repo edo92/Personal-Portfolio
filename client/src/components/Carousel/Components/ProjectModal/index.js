@@ -37,11 +37,11 @@ const ProjectModal = props => {
                             </span>
                         </div>
                         <div className='col-12 py-2 p-1'>
-                            <span className='px-1'><Icon type='global'/></span>
+                            <span className='px-1 pr-2'><Icon type='global'/></span>
                             <span>Website: <a href='/google.com'>{ project.website }</a></span>
                         </div>
                         <div className='col-12 py-2 p-1'>
-                            <span className='px-1'><Icon type='github'/></span>
+                            <span className='px-1 pr-2'><Icon type='github'/></span>
                             <span>Github: <a href='/github.com'>{ project.github }</a></span>
                         </div>
                     </div>

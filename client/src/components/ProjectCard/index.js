@@ -13,8 +13,8 @@ const ProjectCard = props => {
                 </li>
                 <li>
                     <div id='project-describe'>
-                        <span>Los Angeles Highrises</span><br/>
-                        <small>By: Gary Jacobs</small><br/>
+                        <span>{ props.item.name }</span><br/>
+                        <small>{ props.item.summary }</small><br/>
                     </div>
                 </li>
                 <li>

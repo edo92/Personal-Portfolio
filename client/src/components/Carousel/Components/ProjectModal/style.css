@@ -13,3 +13,7 @@
 .view-text {
     color: dimgrey
 }
+
+.ant-breadcrumb > span {
+    color: red
+}
