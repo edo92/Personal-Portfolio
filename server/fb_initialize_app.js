@@ -14,7 +14,7 @@ module.exports = ( admin ) => {
         "client_x509_cert_url": process.env.CLIENT_X509_CERT_URL
     }
 
-    const config = process.env.NODE_ENV === "production" ? prodConfig : devConfig;
+    const config = process.env === "production" ? prodConfig : devConfig;
 
     admin.initializeApp({
         credential: admin.credential.cert( config ),
