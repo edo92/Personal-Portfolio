@@ -2,13 +2,13 @@ import firebase from 'firebase/app'
 import 'firebase/auth'
 
 const firebaseConfig = firebase.initializeApp({
-        apiKey: "AIzaSyD95GvTlNXNL9QCkaOcVe2DffkVVZc5RVw",
-        authDomain: "aff-store.firebaseapp.com",
-        databaseURL: "https://aff-store.firebaseio.com",
-        projectId: "aff-store",
-        storageBucket: "aff-store.appspot.com",
-        messagingSenderId: "385265018716",
-        appId: "1:385265018716:web:a3128a2cca966c7d"
+        apiKey: "AIzaSyBdpCEMgsBDT75OLaAAKASl99rIhvtWNoM",
+        authDomain: "portfolio-c05dd.firebaseapp.com",
+        databaseURL: "https://portfolio-c05dd.firebaseio.com",
+        projectId: "portfolio-c05dd",
+        storageBucket: "",
+        messagingSenderId: "261591204045",
+        appId: "1:261591204045:web:9e96be39ba9ff4b4342984"
 });
 
 export default firebaseConfig;

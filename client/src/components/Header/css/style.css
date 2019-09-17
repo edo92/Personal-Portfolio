@@ -68,7 +68,7 @@
 }
 
 .btn-imp {
-    color: #ff2f32 !important;
+    color: #ff1a1d !important;
 }
 
 /* --- class styles --- */
@@ -78,9 +78,16 @@
     font-weight: 400;
     font-size: 15px;
 }
+
 .header-text:hover {
     color: #e8e8e8;
     opacity: .8;
+}
+
+.glow-effect {
+    border-color: #ff3537!important;
+    -webkit-box-shadow: 0 0 20px #f65657;
+    box-shadow: 0 0 20px #ff292b
 }
 
 /* --- extra small hamburger menu adjustment --- */
