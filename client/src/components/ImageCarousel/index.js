@@ -4,12 +4,12 @@ import './style.css'
 
 class ImageCarousel extends Component {
     state={
-        viewImg: this.props.imageList[0],
+        viewImg: this.props.imageList,
         count: 0
     }
 
     componentWillReceiveProps(newProps){
-        if( newProps ){
+        if( newProps.imageList ){
             this.setState({
                 viewImg: newProps.imageList
             })
@@ -46,7 +46,7 @@ class ImageCarousel extends Component {
                     </button> 
                 </div>
                 <div className='col-12 p-0'>
-                    <div style={{ backgroundImage:`url(${this.state.viewImg})` }} className='view-img-carousel'></div>
+                    <div style={{ backgroundImage:`url(${this.state.viewImg})`}} className='view-img-carousel'></div>
                 </div>
                 <div>
                     <button 
