@@ -1,9 +1,10 @@
 import React from 'react'
-import { Modal, Icon, Divider } from 'antd'
+import { Modal, Icon } from 'antd'
 import './style.css'
 
 import BreadCrumb from '../../../Breadcrumb'
 import ImageCarousel from '../../../ImageCarousel'
+
 const ProjectModal = props => {
     let { project } = props;
     return (
