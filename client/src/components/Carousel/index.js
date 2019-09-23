@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React from 'react';
 import './style.css';
 
 import Carousel from './Components/Carousel/index';
@@ -17,12 +17,9 @@ class ShowcaseCarousel extends React.Component {
 
     modalSwitch = project => {
         this.setState({
-            viewProject: {}
-        },
-        ()=> this.setState({
             viewProject: project,
             modalSwitch: !this.state.modalSwitch
-        }))
+        })
     }
 
     loadingState = () => {
@@ -61,4 +58,4 @@ class ShowcaseCarousel extends React.Component {
         )
     }
 };
-export default memo( ShowcaseCarousel );
+export default ShowcaseCarousel;
