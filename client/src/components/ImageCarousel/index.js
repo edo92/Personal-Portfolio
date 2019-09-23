@@ -4,14 +4,14 @@ import './style.css'
 
 class ImageCarousel extends Component {
     state={
-        viewImg: this.props.imageList,
+        viewImg: this.props.imageList[0],
         count: 0
     }
 
     componentWillReceiveProps(newProps){
         if( newProps.imageList ){
             this.setState({
-                viewImg: newProps.imageList
+                viewImg: newProps.imageList[0]
             })
         }
     }
