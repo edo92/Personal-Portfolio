@@ -4,15 +4,10 @@ import './style.css'
 
 class ImageCarousel extends Component {
     state={
-        viewImg: this.props.imageList[0],
+        viewImg: this.props.imageList,
         count: 0
     }
 
-    componentDidMount(){
-        this.setState({
-            viewImg: this.props.imageList[0],
-        })
-    }
 
     slideright = () => {
         if( this.state.count < this.props.imageList.length-1 ){
@@ -44,7 +39,7 @@ class ImageCarousel extends Component {
                     </button> 
                 </div>
                 <div className='col-12 p-0'>
-                    <div style={{ backgroundImage:`url(${this.state.viewImg})` }} className='view-img-carousel'></div>
+                    <div style={{ backgroundImage:`url(${this.state.viewImg[0]})` }} className='view-img-carousel'></div>
                 </div>
                 <div>
                     <button 
