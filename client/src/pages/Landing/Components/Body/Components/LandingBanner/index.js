@@ -1,4 +1,5 @@
 import React, { memo } from 'react'
+import { Icon } from 'antd'
 import './style.css'
 
 import bannerImg from '../../../../../../static/images/banner.jpg'

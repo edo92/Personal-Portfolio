@@ -17,9 +17,12 @@ class ShowcaseCarousel extends React.Component {
 
     modalSwitch = project => {
         this.setState({
+            viewProject: {}
+        },
+        ()=> this.setState({
             viewProject: project,
             modalSwitch: !this.state.modalSwitch
-        })
+        }))
     }
 
     loadingState = () => {
