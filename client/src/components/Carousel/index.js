@@ -7,6 +7,7 @@ import ProjectModal from './Components/ProjectModal';
 
 class ShowcaseCarousel extends React.Component {
     state={
+        viewProject: {},
         loading: true,
         modalSwitch: false,
     }
