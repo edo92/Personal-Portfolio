@@ -8,6 +8,11 @@ class ImageCarousel extends Component {
         count: 0
     }
 
+    componentDidMount(){
+        this.setState({
+            viewImg: this.props.imageList[0],
+        })
+    }
 
     slideright = () => {
         if( this.state.count < this.props.imageList.length-1 ){
