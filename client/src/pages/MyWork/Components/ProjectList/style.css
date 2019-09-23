@@ -2,7 +2,7 @@
     box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
     max-width: 42rem;
     width: 100%;
-    height: 450px;
+    height: 615px;
     border-radius: 2px;
     font-weight: 700;
     padding: .3rem;
@@ -12,7 +12,7 @@
 #cardImg-container img {
     width: 100%;
     min-height: 175px;
-    object-fit: cover;
+    object-fit: fill;
     padding: .5rem;
 }
 
