@@ -14,11 +14,6 @@ const navItems = [
         name: 'Front End',
         icon: 'ant-design',
         target: 'frontend'
-    },
-    {
-        name: 'Back End',
-        icon: 'code',
-        target: 'backend'
     }
 ];
 

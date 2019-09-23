@@ -12,7 +12,7 @@ import { getAllProjects } from '../../Store/Actions/getAllProjects'
 class MyWorkLayout extends Component {
 
     state={
-        option:'frontend'
+        option:'fullstack'
     }
 
     componentDidMount(){
@@ -32,8 +32,8 @@ class MyWorkLayout extends Component {
                     selectOption={ this.selectOption }
                 />
                 <div id='mywork-container' className='col-10 p-0 h-100'>
-                    <ul className='col-12 p-0 m-0'>
-                        <li>
+                    <ul className='col-12 px-0 m-0'>
+                        <li className='mt-2'>
                             <a href='/'><Button>Go Back</Button></a>
                         </li>
                         <li>

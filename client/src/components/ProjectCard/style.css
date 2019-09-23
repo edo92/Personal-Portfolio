@@ -9,7 +9,7 @@
 #cardImg-container img {
     width: 100%;
     border-radius: 8px;
-    min-height: 175px;
+    height: 200px;
     object-fit: cover;
     padding: .5rem;
 }
