@@ -1,11 +1,13 @@
 import React from 'react'
 import { Button, Divider } from 'antd'
+import { Link } from 'react-router-dom'
 import './css/index.css'
 
 import SocialIcons from '../../components/SocialIcons'
 import MapSkills from './Components/MapSkills'
 
 import { mySkills, selfImg } from './static'
+let resume ='https://firebasestorage.googleapis.com/v0/b/portfolio-c05dd.appspot.com/o/My%20Resume%20.pdf?alt=media&token=a142f1d6-da08-4701-b02f-a0c59b4febde'
 
 const ResumeLayout = () => {
     return (
@@ -31,13 +33,14 @@ const ResumeLayout = () => {
                     <li className='col-6'>
                         <div id='download-resume' className='col-12'>
                             <Button className='col-12' icon='download'>
-                                Download Resume
+                                <a download={ resume } href={ resume } target={ resume }>
+                                    <span className='pl-3'> Download Resume </span>
+                                </a>
                             </Button>
                         </div>
                     </li>
                 </ul>
             </div>
-
             <div id='resume-body' className='col-9 p-0'>
                 <div id='body-header' className='col-12 p-0'>
                     <ul className='col-12 m-0 p-0'>

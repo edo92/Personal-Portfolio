@@ -42,7 +42,7 @@ class MyWorkLayout extends Component {
                     </ul>
                     <Divider className='m-0'/>
                 </div>
-                <div className='col-10 p-0'>
+                <div className='col-10 p-0 ov-hidden'>
                     <Body 
                         projectList={ this.props.projectList }
                         option={ this.state.option}
