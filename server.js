@@ -2,12 +2,15 @@
   const path = require( 'path' );
   const app = express(  );
   const db = require( './models' );
+  var http = require('http');
+  var https = require('https');
 
   const mongooseConnection = require( './server/mongo' );
   const appUse = require( './server/appUse' );
 
-const server = require( 'https' ).createServer( app );
-
+  const server = http.createServer( app );
+  const secureServer = https.createServer({ } , app );
+  
   const firebaseApp = require('./server/fb_initialize_app');
   const admin = require('firebase-admin');
 
