@@ -6,7 +6,8 @@
   const mongooseConnection = require( './server/mongo' );
   const appUse = require( './server/appUse' );
 
-  const server = require( 'http' ).createServer( app );
+const server = require( 'https' ).createServer( app );
+
   const firebaseApp = require('./server/fb_initialize_app');
   const admin = require('firebase-admin');
 
