@@ -3,16 +3,12 @@
   const fs = require('fs');
   const app = express(  );
   const db = require( './models' );
-  var http = require('http');
-  var https = require('https');
 
   const mongooseConnection = require( './server/mongo' );
   const appUse = require( './server/appUse' );
 
   // const privateKey  = fs.readFileSync('./server.pass.key', 'utf8');
   // const certificate = fs.readFileSync('./server.pass.key', 'utf8');
-  
-  const server = http.createServer( app );
   
   const firebaseApp = require('./server/fb_initialize_app');
   const admin = require('firebase-admin');
@@ -34,6 +30,6 @@
     res.sendFile( path.join( __dirname, './client/build/index.html' ) );
   });
   
-  server.listen( PORT, (  ) =>{
+  app.listen( PORT, (  ) =>{
     console.log( `🌎 ==> Server now on port ${PORT}!` );
   });
