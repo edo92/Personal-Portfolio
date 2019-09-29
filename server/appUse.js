@@ -15,13 +15,19 @@ module.exports = ( app ) => {
             'Origin, X-Requested-With, Content-Type, Accept, Authorization'
         );
         
-        if ( req.secure ) {
+        if( req ){
             res.header( 'Access-Control-Allow-Methods', 'PUT, POST, PATCH, DELETE, GET');
             return res.status( 200 ).json({});
-        } 
-        else {
-            res.redirect('https://' + req.headers.host + req.url);
-        };
+        }
+
+
+        // if ( req.secure ) {
+        //     res.header( 'Access-Control-Allow-Methods', 'PUT, POST, PATCH, DELETE, GET');
+        //     return res.status( 200 ).json({});
+        // } 
+        // else {
+        //     res.redirect('https://' + req.headers.host + req.url);
+        // };
 
         next();
     });

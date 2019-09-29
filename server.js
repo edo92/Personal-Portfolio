@@ -1,5 +1,6 @@
   const express = require( 'express' );
   const path = require( 'path' );
+  const fs = require('fs');
   const app = express(  );
   const db = require( './models' );
   var http = require('http');
@@ -8,8 +9,10 @@
   const mongooseConnection = require( './server/mongo' );
   const appUse = require( './server/appUse' );
 
+  // const privateKey  = fs.readFileSync('./server.pass.key', 'utf8');
+  // const certificate = fs.readFileSync('./server.pass.key', 'utf8');
+  
   const server = http.createServer( app );
-  const secureServer = https.createServer({ } , app );
   
   const firebaseApp = require('./server/fb_initialize_app');
   const admin = require('firebase-admin');
