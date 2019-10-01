@@ -48,14 +48,89 @@ const ResumeLayout = () => {
                             <a href='/'><Button> Go Back </Button></a>
                         </li>
                         <li>
-                            <h2> Resume </h2>
+                            <h2> Skills </h2>
                         </li>
                     </ul>
                     <Divider className='m-0'/>
                 </div>
                 <div className='col-12'>
                     <div id='skills-container' className='col-12 px-0 py-4'>
-                        <MapSkills skills={ mySkills }/>
+                        {/*<MapSkills skills={ mySkills }/>*/} 
+                        <div className='row col-12 px-0 m-0 pt-5'>
+                            <ul className='col-6 m-0 list-circle'>
+                                <li>
+                                    <p>React - Expert</p>
+                                </li>
+                                <li>
+                                    <p>Redux - Expert</p>
+                                </li>
+                                <li>
+                                    <p>React Native - Intermediate</p>
+                                </li>
+                                <li>
+                                    <p>Vue - Intermediate</p>
+                                </li>
+                                <li>
+                                    <p>Django - Competent</p>
+                                </li>
+                            </ul>
+                            <ul className='col-6 m-0 list-circle'>
+                                <li>
+                                    <p>Node.js - Expert</p>
+                                </li>
+                                <li>
+                                    <p>Python - Competent</p>
+                                </li>
+                                <li>
+                                    <p>MongoDB - Expert</p>
+                                </li>
+                                <li>
+                                    <p>MySQL - Advence</p>
+                                </li>
+                                <li>
+                                    <p>AWC - Advence</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className='col-12 py-5'>
+                            <h1 className='font-200'>Libraries</h1>
+                        </div>
+                        <div className='row col-12 px-0 m-0 pt-5'>
+                            <ul className='col-6 m-0 list-circle'>
+                                <li>
+                                    <p>Socket.io - Expert</p>
+                                </li>
+                                <li>
+                                    <p>Firebase - Expert</p>
+                                </li>
+                                <li>
+                                    <p>jsonwebtoken - Intermediate</p>
+                                </li>
+                                <li>
+                                    <p>Sequalize - Intermediate</p>
+                                </li>
+                                <li>
+                                    <p>Mongoose - Competent</p>
+                                </li>
+                            </ul>
+                            <ul className='col-6 m-0 list-circle'>
+                                <li>
+                                    <p>Firebase - Expert</p>
+                                </li>
+                                <li>
+                                    <p>Ant.desing - Expert</p>
+                                </li>
+                                <li>
+                                    <p>Bower - Intermediate</p>
+                                </li>
+                                <li>
+                                    <p>WebPack - Advence</p>
+                                </li>
+                                <li>
+                                    <p>Next.js - Advence</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

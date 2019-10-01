@@ -21,3 +21,7 @@
 #sidebar-intro p {
     margin: 0;
 }
+
+#download-resume a, #download-resume i {
+    color: rgba(59, 59, 59, 0.712) !important;
+} 

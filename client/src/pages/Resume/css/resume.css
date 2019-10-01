@@ -26,6 +26,18 @@
     list-style: circle;
 }
 
+#skills-container ul > li p{
+    color: rgba(59, 59, 59, 0.712) !important;
+    font-size: 18px;
+}
+
+.font-200 {
+    font-weight: 200;
+}
+.list-circle {
+    list-style: circle;
+}
+
 /* --- body header --- */
 #body-header button {
     text-align: left;

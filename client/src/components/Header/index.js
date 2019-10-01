@@ -22,9 +22,11 @@ const Header = () => {
                             </li>
                         </ul>
                         <div className='col-4'>
-                            <div className='glow-effect' id='resume-bttn'>
-                                <a href='/resume' className='header-text btn-imp'>Resume</a>
-                            </div>
+                            <a href='/resume' >
+                                <div className='glow-effect' id='resume-bttn'>
+                                    <a className='header-text btn-imp'>Resume</a>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div className='col-12 visible-sm p-0'>

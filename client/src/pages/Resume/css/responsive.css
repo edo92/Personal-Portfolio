@@ -93,6 +93,6 @@
 /* --- List responsive padding --- */
 @media only screen and (min-width: 1000px) {
     #skills-container {
-        padding-left: 5vw;
+        padding-left: 10vw;
     }
 }
