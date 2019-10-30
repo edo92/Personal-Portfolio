@@ -39,11 +39,11 @@ const ProjectModal = props => {
                         </div>
                         <div className='py-2 p-1'>
                             <span className='px-1 pr-2'><Icon type='global'/></span>
-                            <span>Website: <a href={ project.website }>{ project.website }</a></span>
+                            <span>Website: <a href={ project.website } target='_blank'>{ project.website }</a></span>
                         </div>
                         <div className='py-2 p-1'>
                             <span className='px-1 pr-2'><Icon type='github'/></span>
-                            <span>Github: <a href={ project.github }>{ project.github }</a></span>
+                            <span>Github: <a href={ project.github } target='_blank'>{ project.github }</a></span>
                         </div>
                     </div>
                 : null }
