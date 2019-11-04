@@ -16,7 +16,6 @@ class HomeBanner extends React.Component {
     }
 
     render(){
-        console.log('postList', this.state.postList )
         return(
             <div id='landing-page-container' className='col-12'>
                 <nav id='main-header' className='col-12'>

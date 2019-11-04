@@ -1,4 +1,5 @@
 import axios from 'axios'
+import { headerAuth } from '../utility/headerAuth';
 
 export const request = {
     auth: {
@@ -32,7 +33,7 @@ export const request = {
     post: {
         create: async post => {
             try {
-                let data = await axios.post('/create/post/', post );
+                let data = await axios.post('/create/post/', post, await headerAuth());
                 return data.data;
             }
             catch( error ){ return error };
@@ -40,7 +41,7 @@ export const request = {
 
         getAllPosts: async requestBy => {
             try {
-                let data = await axios.post(`/get/all/posts/${requestBy}/`);
+                let data = await axios.post(`/get/all/posts/${requestBy}/`, await headerAuth());
                 return data.data;
             }
             catch( error ){ return error };
@@ -56,7 +57,7 @@ export const request = {
 
         likePost: async ( id, uid, isLiked ) => {
             try {
-                let data = await axios.get(`/like/post/${id}/${uid}/${isLiked}`);
+                let data = await axios.get(`/like/post/${id}/${uid}/${isLiked}`, await headerAuth());
                 return data.data;
             }
             catch( error ){ return error };
@@ -64,7 +65,7 @@ export const request = {
 
         sharePost: async ( id, uid ) => {
             try {
-                let data = await axios.get(`/share/post/${id}/${uid}/`);
+                let data = await axios.get(`/share/post/${id}/${uid}/`, await headerAuth());
                 return data.data;
             }
             catch( error ){ return error };
