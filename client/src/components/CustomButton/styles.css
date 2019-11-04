@@ -1,0 +1,9 @@
+.custom-button {
+    width: 100%;
+}
+
+.button-x {
+    border-radius: 15px;
+    border: 0;
+    color: #fff;
+}

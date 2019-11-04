@@ -1,18 +1,18 @@
 const mongoose = require('mongoose');
 
 module.exports = () => {
-    const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/portfolio';
+    const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/hamsterpost';
 
     mongoose.set('useCreateIndex', true);
-    mongoose.set( 'useFindAndModify', true );
 
     const mdbConfig = {
-      useNewUrlParser:true,
-      useFindAndModify:true,
-      useCreateIndex: true 
+      useNewUrlParser: true,
+      useFindAndModify: true,
+      useCreateIndex: true,
+      useUnifiedTopology: true
     };
-    mongoose.connect( MONGODB_URI, mdbConfig );
     
+    mongoose.connect( MONGODB_URI, mdbConfig );
     mongoose.connection.once('open',() =>{
       console.log('mongoose connection successful');
     }); 

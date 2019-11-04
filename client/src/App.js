@@ -1,18 +1,18 @@
-import React, { Component } from 'react'
-import 'antd/dist/antd.css'
+import React, { Component } from 'react';
+import 'antd/dist/antd.css';
+import './assets/css/index.css';
 
-import { Router, Route, Switch } from 'react-router-dom'
-import { createBrowserHistory } from 'history'
+import { Router, Route, Switch } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
 
-import { AuthProvider } from './components/helpers/AuthProvider'
-import { PrivateRoute } from './components/helpers/PrivateRoute'
-import { AuthRoute } from './components/helpers/AuthRoute'
+import { AuthProvider } from './components/helpers/AuthProvider';
+import { PrivateRoute } from './components/helpers/PrivateRoute';
+import { AuthRoute } from './components/helpers/AuthRoute';
 
-import LandingPage from './pages/Landing'
-import ResumePage from './pages/Resume'
-import MyWork from './pages/MyWork'
-import Admin from './pages/Admin'
-import AdminSignin from './pages/AdminLogin'
+import LandingPage from './pages/Landing';
+import DashboardPage from './pages/Dashboard';
+import LoginPage from './pages/Auth/Login';
+import RegisterPage from './pages/Auth/Register';
 
 class App extends Component {
   render() {
@@ -23,10 +23,9 @@ class App extends Component {
             <div>
               <Switch>
                 <Route exact path='/' component={ LandingPage }/>
-                <Route exact path='/resume' component={ ResumePage }/>
-                <Route exact path='/mywork' component={ MyWork }/>
-                <PrivateRoute exact path='/admin' component={ Admin }/>
-                <AuthRoute exact path='/admin-signin' component={ AdminSignin }/>
+                <Route exact path='/login' component={ LoginPage }/>
+                <Route exact path='/register' component={ RegisterPage }/>
+                <Route exact path='/dashboard/:id' component={ DashboardPage }/>
               </Switch>
             </div>
           </Router>

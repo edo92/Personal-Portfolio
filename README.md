@@ -1,1 +1,1 @@
-# test
+Hamster Blog

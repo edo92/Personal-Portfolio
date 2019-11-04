@@ -1,36 +1,15 @@
-const control = require('../controller');
-const headerAuth = require('../authRoute');
+const { action } = require('../action');
 
 module.exports = ( app, db ) => {
-
-    app.post('/add/project/', headerAuth, async (req, res) => {
-        let form = req.body.form;
-        try {
-            await control.addProject( db, form );
-            let projects = await control.getProjects( db );
-
-            res.status( 200 ).json({ success: projects });
-        }
-        catch ( error ){ res.status( 500 ).end() }
+    app.post('/register/user/', ( req, res ) => {
+        action.auth.register( req, res, db );
     });
 
-    app.get('/delete/project/:id', headerAuth, async (req,res) => {
-        try {
-            await control.deleteProject( db, req.params.id );
-            let projects = await control.getProjects( db );
-
-            res.status( 200 ).json({ success: projects });
-        }
-        catch( error ){ res.status( 500 ).end() }
+    app.post('/signin/user', ( req, res ) => {
+        action.auth.signin( req, res );
     });
 
-    //-------------------------------------------------//
-
-    app.get('/get/all/projects/', async ( req, res ) => {
-        try {
-            let projects = await control.getProjects( db );
-            res.status( 200 ).json( projects );
-        }
-        catch ( error ){ res.status( 500 ).end() }
+    app.get('/follow/user/:owner/:asker', ( req, res ) => {
+        action.user.followUser( req, res, db );
     });
 };

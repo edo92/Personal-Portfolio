@@ -1,0 +1,140 @@
+#landing-page-container {
+    background: linear-gradient(to bottom, #d3e7ff 0, #94b6ff 46%, #d2ecff 74%, #b7b4f375 100%);
+    padding: 0;
+    height: 100vh;
+}
+
+#banner-container {
+    height: 715px !important;
+    border-bottom-left-radius: 180px;
+    background: -webkit-linear-gradient(to bottom, #00BCD4 0%,#42548e 100%);;
+    background: linear-gradient(to bottom, #00BCD4 0%,#42548e 100%);
+    padding: 2rem;
+}
+
+#banner-inner {
+    padding-top: 5rem;
+    margin: 0;
+}
+
+.clip-dash {
+    content: '';
+    position: relative;
+    top: 1.2em;
+    left: -25px;
+    height: 3px;
+    width: 20px;
+    background: #0accbe;
+}
+
+.text-title {
+    font-family: 'Asap', sans-serif;
+    color: white;
+}
+.sub-text {
+    color: #ffffff9e;
+    white-space: nowrap
+}
+
+.banner-bttn {
+    max-width: 130px;
+    padding: 16px 20px;
+    margin-right: .5rem;
+    font-size: 15px;
+    line-height: 1.4;
+    border: 2px solid;
+    border-radius: 35px;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    text-transform: none;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.btn-style-1 {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #15aac8;
+}
+.btn-style-2 {
+    background-color: #0accbe;
+    border-color: #0accbe;
+    color: #ffffff;
+}
+
+/* --- Header --- */
+#main-header {
+    background: rgb(0, 161, 187);
+    padding: 0;
+}
+
+.main-logo {
+    font-size:28px;
+    font-weight:600;
+    text-align: center;
+    line-height: 42px;
+    padding-top: .2rem;
+    margin: 0;
+    color: hsla(0, 0%, 100%, 0.82);
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.5);
+}
+
+/* --- Header Button --- */
+#loginBtn {
+    text-align: right;
+    line-height: 3;
+}
+#loginBtn .main-bttn {
+    border: 1px solid #fff;
+    padding: .5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 13px;
+}
+#loginBtn .secondery-bttn {
+    color: #fff;
+    padding-right: 1rem;
+}
+
+
+@media (min-width: 200px) and (max-width: 450px) { 
+    .main-logo {
+        font-size: 20px;
+    }
+}
+@media (min-width: 0) and (max-width: 846px) { 
+    .secondery-bttn {
+        display: none;
+    }
+}
+
+
+/* --- Responsive --- */
+/*------------------------------*/
+@media (min-width: 0) and (max-width: 768px) { 
+    #banner-text {
+        left: 20vw;
+        top: 2rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) { 
+    #banner-text {
+        left: 10vw;
+        top: 1rem;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    #banner-text {
+        left: 13vw;
+        top: 1rem;
+    }
+}
