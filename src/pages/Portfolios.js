@@ -1,24 +1,25 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+import axios from 'axios';
 import Sectiontitle from "../components/Sectiontitle";
 import Layout from "../components/Layout";
-import BlogsView from "../components/BlogsView";
 import Pagination from "../components/Pagination";
+import PortfoliosView from "../components/PortfoliosView";
 
-function Blogs() {
-  const [posts, setPosts] = useState([]);
+function Portfolios() {
+  const [portfolios, setPortfoios] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage] = useState(6);
+  const [portfoliosPerPage] = useState(9);
 
   useEffect(() => {
-    axios.get("/api/blog").then(response => {
-      setPosts(response.data);
-    });
-  }, [posts]);
+    axios.get('/api/portfolios')
+      .then( response => {
+        setPortfoios(response.data);
+      })
+  }, [portfolios]);
 
-  const indexOfLastPost = currentPage * postsPerPage;
-  const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+  const indexOfLastPortfolios = currentPage * portfoliosPerPage;
+  const indexOfFirstPortfolios = indexOfLastPortfolios - portfoliosPerPage;
+  const currentPortfolios = portfolios.slice(indexOfFirstPortfolios, indexOfLastPortfolios);
 
   const paginate = (e, pageNumber) => {
     e.preventDefault();
@@ -29,13 +30,13 @@ function Blogs() {
     <Layout>
       <div className="mi-about mi-section mi-padding-top mi-padding-bottom">
         <div className="container">
-          <Sectiontitle title="Recent Blogs" />
-          <BlogsView blogs={currentPosts} />
-          {!(posts.length > postsPerPage) ? null : (
-            <Pagination
+          <Sectiontitle title="Portfolios" />
+          <PortfoliosView portfolios={currentPortfolios}/>
+          {!(portfolios.length > portfoliosPerPage) ? null : (
+            <Pagination 
               className="mt-50"
-              itemsPerPage={postsPerPage}
-              totalItems={posts.length}
+              itemsPerPage={portfoliosPerPage}
+              totalItems={portfolios.length}
               paginate={paginate}
               currentPage={currentPage}
             />
@@ -46,4 +47,4 @@ function Blogs() {
   );
 }
 
-export default Blogs;
+export default Portfolios;
