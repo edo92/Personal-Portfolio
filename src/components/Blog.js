@@ -14,7 +14,7 @@ function Blog(props) {
   };
   return (
     <div className="mi-blog">
-      <div className="mi-blog-image">
+      <div className="mi-blog-image text-center">
         <Link to={`blogs/blog-details/${id}/${getNospaceTitle(filesource)}`}>
           <img src={featuredImage} alt={title} />
         </Link>
@@ -23,7 +23,7 @@ function Blog(props) {
           <span className="month">{getShortMonth(createMonth)}</span>
         </div>
       </div>
-      <div className="mi-blog-content">
+      <div className="mi-blog-content text-center">
         <h5>
           <Link to={`blogs/blog-details/${id}/${getNospaceTitle(filesource)}`}>
             {title}

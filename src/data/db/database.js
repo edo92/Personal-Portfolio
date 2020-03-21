@@ -10,13 +10,13 @@ const database = {
     email: '',
     address: 'Los Angeles, California, 91401',
     socialLinks: {
-      facebook: 'https://facebook.com',
-      twitter: 'https://twitter.com',
+      facebook: 'facebook.com',
+      twitter: '',
       pinterest: '',
       behance: '',
-      linkedin: '',
+      linkedin: 'https://www.linkedin.com/in/the-ej/',
       dribbble: '',
-      github: 'https://github.com'
+      github: 'https://github.com/edo92'
     },
     brandImage: '/images/brand-image.jpg',
     aboutImage: '/images/about-image.jpg',
@@ -25,19 +25,19 @@ const database = {
   },
   services: [
     {
-      title: "Web Design",
+      title: "Full stack website",
       icon: 'color-pallet',
-      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod."
+      details: "Full stack application using React, Angular, Vue."
     },
     {
-      title: "Web Development",
+      title: "Backend Development",
       icon: 'code',
-      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod."
+      details: "Backend development using Node.js Django"
     },
     {
       title: "Mobile Application",
       icon: 'mobile',
-      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod."
+      details: "Mobile app development using React native, node.js, aws"
     }
   ],
   reviews: [
@@ -332,7 +332,7 @@ const database = {
         company: "upwork.com",
         details: "Build full stack application for clients, and work on node.js backend mobile apps"
       },
-    
+
     ],
     educationExperience: [
       {
@@ -352,18 +352,9 @@ const database = {
   blogs: [
     {
       id: 1,
-      title: 'Markdown & Html supported blog.',
-      featuredImage: '/images/blog-image-1.jpg',
-      filesource: '../../blog/markdown-html-supported-blog.md',
-      createDay: "20",
-      createMonth: 'February',
-      createYear: "2020"
-    },
-    {
-      id: 2,
       title: 'InHouse-produce vertical farming',
       featuredImage: 'https://inhouseproduce.com/img/inhouse-icon.png',
-      filesource: '../../blog/installing-nodejs-on-your-device.md',
+      filesource: '../../blog/inhouse.md',
       createDay: "20",
       createMonth: 'February',
       createYear: "2020"

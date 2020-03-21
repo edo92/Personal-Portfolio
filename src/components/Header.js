@@ -24,21 +24,14 @@ function Header(){
                 {!navigationToggler ? <LineIcon name="menu" /> : <LineIcon name="close" />}
             </button>
             <div className="mi-header-inner">
-                <div className="mi-header-image">
-                    <Link to="/">
-                        <img src={information.brandImage} alt="brandimage"/>
-                    </Link>
-                </div>
-                
-                <ul className="mi-header-menu">
+                <ul className="mi-header-menu" style={{paddingTop:'15rem'}}>
                     <li><NavLink exact to="/"><span>Home</span></NavLink></li>
                     <li><NavLink to="/about"><span>About</span></NavLink></li>
                     <li><NavLink to="/resume"><span>Resume</span></NavLink></li>
-                    <li><NavLink to="/portfolios"><span>Portfolios</span></NavLink></li>
-                    <li><NavLink to="/blogs"><span>Blogs</span></NavLink></li>
+                    <li><NavLink to="/portfolio"><span>Portfolio</span></NavLink></li>
                     <li><NavLink to="/contact"><span>Contact</span></NavLink></li>
                 </ul>
-                <p className="mi-header-copyright">&copy; {new Date().getFullYear()} <b><a rel="noopener noreferrer" target="_blank" href="https://nuclearthemes.com">NuclearThemes</a></b></p>
+                <p className="mi-header-copyright">&copy; {new Date().getFullYear()} <b><a rel="noopener noreferrer" target="_blank" href="https://nuclearthemes.com">EJ Portfolio</a></b></p>
             </div>
         </nav>
     )

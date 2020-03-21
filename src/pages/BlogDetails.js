@@ -3,6 +3,7 @@ import ReactMarkdown from "react-markdown/with-html";
 import axios from "axios";
 import Disqus from "disqus-react";
 import Layout from "../components/Layout";
+import Carousel from "../components/Carousel";
 
 function BlogDetails(props) {
   const [content, setContent] = useState("");
@@ -18,24 +19,14 @@ function BlogDetails(props) {
       .catch(err => console.log(err));
   }, [content]);
 
-  const disqusShortname = "chester-react"; //found in your Disqus.com dashboard
-  const disqusConfig = {
-    url: "https://tf-react-chester.now.sh/", //Homepage link of this site.
-    identifier: blogId,
-    title: blogFile
-  };
-
   return (
     <Layout>
-      <div className="mi-blog-details mi-section mi-padding-top mi-padding-bottom">
+      <div className="mi-blog-details mi-section mi-padding-bottom pt-3">
         <div className="container">
-          <ReactMarkdown source={content} escapeHtml={false}></ReactMarkdown>
-          <div className="mi-blog-details-comments mt-30">
-            <Disqus.DiscussionEmbed
-              shortname={disqusShortname}
-              config={disqusConfig}
-            />
-          </div>
+          <Carousel images={content.images} />
+          <div className='pl-3 pt-3'><p>{content.title}</p></div>
+          <blockquote>{content.blockquote}</blockquote>
+          <p>{content.content}</p>
         </div>
       </div>
     </Layout>
