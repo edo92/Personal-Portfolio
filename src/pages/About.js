@@ -8,7 +8,7 @@ import Layout from "../components/Layout";
 import Service from '../components/Service';
 import Testimonial from '../components/Testimonial';
 
-function About(){
+function About() {
   const [toggler, setToggler] = useState(false);
   const [information, setInformation] = useState("");
   const [services, setServices] = useState([]);
@@ -42,17 +42,17 @@ function About(){
     })
   }
 
-  useEffect(() =>{
+  useEffect(() => {
     axios.get('/api/information')
-      .then(response =>{
+      .then(response => {
         setInformation(response.data)
       })
     axios.get('/api/services')
-      .then(response =>{
+      .then(response => {
         setServices(response.data)
       })
     axios.get('/api/reviews')
-      .then(response =>{
+      .then(response => {
         setReviews(response.data)
       })
   }, [])
@@ -121,30 +121,16 @@ function About(){
           </div>
         </div>
       </div>
-      <div className="mi-service-area mi-section mi-padding-top">
+      <div className="mi-service-area mi-section mi-padding-top pb-3">
         <div className="container">
-          <Sectiontitle title="Services" />
+          <Sectiontitle title="Experiance" />
           <div className="mi-service-wrapper">
             <div className="row mt-30-reverse">
               {services.map(service => (
                 <div className="col-lg-4 col-md-6 col-12 mt-30" key={service.title}>
-                  <Service content={service}/>
+                  <Service content={service} />
                 </div>
               ))}
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="mi-review-area mi-section mi-padding-top mi-padding-bottom">
-        <div className="container">
-          <Sectiontitle title="Reviews" />
-          <div className="row justify-content-center">
-            <div className="col-12">
-              <Slider className="mi-testimonial-slider" {...sliderSettings}>
-                {reviews.map(review =>(
-                  <Testimonial key={review.id} content={review}/>
-                ))}
-              </Slider>
             </div>
           </div>
         </div>

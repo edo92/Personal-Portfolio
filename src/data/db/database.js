@@ -2,15 +2,13 @@ import Mock from "../mock";
 
 const database = {
   information: {
-    name: 'Devid Chester',
-    aboutContent: "I am a frontend web developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.",
-    age: 24,
+    name: 'Eduard Jacobs',
+    aboutContent: "I am a Full stack software engineer. I’m interested in applying technology to make a smarter world that is more streamlined and offers greater human possibilities.",
+    age: 27,
     phone: '',
-    nationality: 'American',
-    language: 'English, French',
+    language: 'English, Armenian, Russian',
     email: '',
-    address: '121 King Street, Melbourne, Australia',
-    freelanceStatus: 'Available',
+    address: 'Los Angeles, California, 91401',
     socialLinks: {
       facebook: 'https://facebook.com',
       twitter: 'https://twitter.com',
@@ -82,13 +80,58 @@ const database = {
       value: 99
     },
     {
+      title: "React",
+      value: 95
+    },
+    {
       title: "Python",
       value: 95
     },
     {
       title: "React Native",
       value: 90
-    }
+    },
+    {
+      title: "MongoDB",
+      value: 99
+    },
+    {
+      title: "MySQL",
+      value: 85
+    },
+    {
+      title: "AWS (S3, EC2, lambda, Elastic Beanstalk, IOT)",
+      value: 90
+    },
+    {
+      title: "IOT (Balena)",
+      value: 90
+    },
+    {
+      title: "CI/CD Pipeline (aws)",
+      value: 90
+    },
+    {
+      title: "Docker",
+      value: 90
+    },
+    {
+      title: "GraphQL",
+      value: 90
+    },
+    {
+      title: "Typescript",
+      value: 90
+    },
+    {
+      title: "Postman",
+      value: 90
+    },
+    {
+      title: "SASS",
+      value: 90
+    },
+
   ],
   portfolios: [
     {
@@ -277,48 +320,33 @@ const database = {
     workingExperience: [
       {
         id: 1,
-        year: "2018 - Present",
-        position: "Frontend Web Developer",
-        company: "Abc Company",
-        details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro."
+        year: "2019 - Present",
+        position: "Software Engineer",
+        company: "InHouse-Produce",
+        details: "Developed IOT software for vertical farming, with full stack web application."
       },
       {
         id: 2,
-        year: "2016 - 2018",
-        position: "Frontend Web Developer",
-        company: "CBA Company",
-        details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro."
+        year: "2018 - 2019",
+        position: "Full Stack Web Developer",
+        company: "upwork.com",
+        details: "Build full stack application for clients, and work on node.js backend mobile apps"
       },
-      {
-        id: 3,
-        year: "2014 - 1016",
-        position: "UI/UX Designer",
-        company: "Example Company",
-        details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro."
-      }
+    
     ],
     educationExperience: [
       {
         id: 1,
-        year: "2018 - 2019",
-        graduation: "Master of Science",
-        university: "Abc University",
-        details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro."
+        year: "2018 - 2018",
+        graduation: "Full Stack Web Developer",
+        university: "University of California, Los Angeles Extention",
       },
       {
         id: 2,
-        year: "2016 - 2018",
-        graduation: "Bachelor of Science",
-        university: "Abc University",
-        details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro."
+        year: "2015 - 2017",
+        graduation: "Computer Science",
+        university: "Los Angeles Valley Collage",
       },
-      {
-        id: 3,
-        year: "2015 - 2016",
-        graduation: "Higher Schoold Graduation",
-        university: "Abc College",
-        details: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. Deleniti exercitationem nostrum quasi. Molestiae, vel porro."
-      }
     ]
   },
   blogs: [
@@ -333,135 +361,18 @@ const database = {
     },
     {
       id: 2,
-      title: 'Installing NodeJS on your device.',
-      featuredImage: '/images/blog-image-2.jpg',
+      title: 'InHouse-produce vertical farming',
+      featuredImage: 'https://inhouseproduce.com/img/inhouse-icon.png',
       filesource: '../../blog/installing-nodejs-on-your-device.md',
-      createDay: "20",
-      createMonth: 'February',
-      createYear: "2020"
-    },
-    {
-      id: 3,
-      title: 'UI/UX design starter with Adobe XD.',
-      featuredImage: '/images/blog-image-3.jpg',
-      filesource: '../../blog/uiux-design-starter-with-adobe-xd.md',
-      createDay: "20",
-      createMonth: 'February',
-      createYear: "2020"
-    },
-    {
-      id: 4,
-      title: 'Boost your post for increasing sales.',
-      featuredImage: '/images/blog-image-4.jpg',
-      filesource: '../../blog/boost-your-post-for-increasing-sales.md',
-      createDay: "20",
-      createMonth: 'February',
-      createYear: "2020"
-    },
-    {
-      id: 5,
-      title: 'Difference between GatsbyJS & NextJS.',
-      featuredImage: '/images/blog-image-5.jpg',
-      filesource: '../../blog/difference-between-gatsbyjs-and-nextjs.md',
-      createDay: "20",
-      createMonth: 'February',
-      createYear: "2020"
-    },
-    {
-      id: 6,
-      title: 'How to choose javascript framework for project.',
-      featuredImage: '/images/blog-image-6.jpg',
-      filesource: '../../blog/how-to-choose-javascript-framework-for-project.md',
-      createDay: "20",
-      createMonth: 'February',
-      createYear: "2020"
-    },
-    {
-      id: 7,
-      title: 'Web automation with python language.',
-      featuredImage: '/images/blog-image-7.jpg',
-      filesource: '../../blog/web-automation-with-python-language.md',
-      createDay: "20",
-      createMonth: 'February',
-      createYear: "2020"
-    },
-    {
-      id: 8,
-      title: 'Time to use latest technology for creating a website.',
-      featuredImage: '/images/blog-image-8.jpg',
-      filesource: '../../blog/time-to-use-latest-technology-for-creating-a-website.md',
-      createDay: "20",
-      createMonth: 'February',
-      createYear: "2020"
-    },
-    {
-      id: 9,
-      title: 'Think out of the box.',
-      featuredImage: '/images/blog-image-9.jpg',
-      filesource: '../../blog/think-out-of-the-box.md',
-      createDay: "20",
-      createMonth: 'February',
-      createYear: "2020"
-    },
-    {
-      id: 10,
-      title: 'Trending designs in 2020.',
-      featuredImage: '/images/blog-image-1.jpg',
-      filesource: '../../blog/trending-designs-in-2020.md',
-      createDay: "20",
-      createMonth: 'February',
-      createYear: "2020"
-    },
-    {
-      id: 11,
-      title: 'How to get 10k instagram followers?',
-      featuredImage: '/images/blog-image-2.jpg',
-      filesource: '../../blog/how-to-get-10k-instagram-followers.md',
-      createDay: "20",
-      createMonth: 'February',
-      createYear: "2020"
-    },
-    {
-      id: 12,
-      title: 'What NodeJS can do?',
-      featuredImage: '/images/blog-image-3.jpg',
-      filesource: '../../blog/what-nodejs-can-do.md',
-      createDay: "20",
-      createMonth: 'February',
-      createYear: "2020"
-    },
-    {
-      id: 13,
-      title: 'Futures of javascript.',
-      featuredImage: '/images/blog-image-4.jpg',
-      filesource: '../../blog/future-of-javascript.md',
-      createDay: "20",
-      createMonth: 'February',
-      createYear: "2020"
-    },
-    {
-      id: 14,
-      title: 'Popular javascript library in 2020.',
-      featuredImage: '/images/blog-image-5.jpg',
-      filesource: '../../blog/popular-javascript-library-in-2020.md',
-      createDay: "20",
-      createMonth: 'February',
-      createYear: "2020"
-    },
-    {
-      id: 15,
-      title: 'Promrammers must read books.',
-      featuredImage: '/images/blog-image-6.jpg',
-      filesource: '../../blog/programmers-must-read-books.md',
       createDay: "20",
       createMonth: 'February',
       createYear: "2020"
     }
   ],
   contactInfo: {
-    phoneNumbers: ['+012-3456-7891', '+012-3456-7892'],
-    emailAddress: ['admin.sitename@example.com', 'info.sitename@example.com'],
-    address: "121 King Street, Melbourne, Victoria 3000, Australia"
+    phoneNumbers: ['(818) 404-3185'],
+    emailAddress: ['edoter92@gmail.com'],
+    address: "Los Angeles, California, 91401"
   }
 }
 
